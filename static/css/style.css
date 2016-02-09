@@ -54,19 +54,21 @@ h1 {
     text-transform: none;
     font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
+    font-size:36px;
     letter-spacing: 4px;
     line-height: 1.5;
     text-align: left;
 }
 
 h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 0; 
     text-transform: none;
     font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
     line-height: 1.5;
+    text-align:justify;
 }
 
 h3 {
@@ -74,12 +76,22 @@ h3 {
     text-transform: none;
     font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 1px;
     line-height: 1.5;
     text-align:justify;
 }
 
+h5 {
+    margin: 0 0 20px 0; 
+    text-transform: none;
+    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align:center;
+}
 
 
 p {
@@ -112,7 +124,7 @@ a:focus {
 }
 
 .gray{
-    font-size: 10px;
+    font-size: 14px;
     color: #a5a5a5;
 }
 
@@ -180,8 +192,8 @@ blockquote span{
 /* Navigation Bar */
 
 .navbar-custom {
-    padding-top: 12px;
-    height: 120px;
+    padding-top: 14px;
+    height: 135px;
     margin-bottom: 0;
     text-transform: none;
     font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;

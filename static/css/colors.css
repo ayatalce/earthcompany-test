@@ -23,7 +23,11 @@ a:focus,
 .navbar-custom a,
 .services-item i,
 blockquote {
-    color: #3ca075; 
+    color: #38b48b; 
+}
+
+h5 {
+    color: #4a4a4a;
 }
 
 
@@ -33,14 +37,14 @@ blockquote {
 .btn-overcolor,
 .scroll-top a:link,
 .scroll-top a:visited {
-    background: #3ca075; 
+    background: #38b48b; 
 }
 
 .btn-default,
 .scroll-top a:link,
 .scroll-top a:visited,
 blockquote {
-    border-color: #3ca075; 
+    border-color: #38b48b; 
 }
 
 
@@ -86,7 +90,7 @@ blockquote {
 .navbar-custom.top-nav-collapse,
 figure:hover figcaption,
 #cd-zoom-in, #cd-zoom-out{
-	background-color: rgba(60,160,117,0.9); /* RGBA of Primary color - opacity .9 */
+	background-color: rgba(56,180,139,0.9); /* RGBA of Primary color - opacity .9 */
 }
 
 
@@ -94,20 +98,20 @@ figure:hover figcaption,
 
 footer,
 footer .copynote {
-    background: rgba(60,160,117,0.9); 
+    background: rgba(56,180,139,0.9); 
 }
 
 
 /* Text selection color */
 
 ::-moz-selection {
-    background: rgba(60,160,117, .7); 
+    background: rgba(56,180,139, .7); 
 }
 
 ::selection {
-    background: rgba(60,160,117, .7); 
+    background: rgba(56,180,139, .7); 
 }
 
 body {
-    webkit-tap-highlight-color: rgba(60,160,117, .7); 
+    webkit-tap-highlight-color: rgba(56,180,139, .7); 
 }
