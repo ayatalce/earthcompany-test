@@ -7,7 +7,6 @@
 
 #parallax-slide,
 #products,
-#portfolio,
-#counter{
+#portfolio{
 	background-attachment: fixed;
 }
