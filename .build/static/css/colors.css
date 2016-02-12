@@ -24,7 +24,7 @@ a:focus,
 .services-item i,
 .nav-tabs,
 blockquote {
-    color: #38b48b; 
+    color: #7dbe79; 
 }
 
 h4 {
@@ -42,14 +42,14 @@ h5 {
 .btn-overcolor,
 .scroll-top a:link,
 .scroll-top a:visited {
-    background: #38b48b; 
+    background: #7dbe79; 
 }
 
 .btn-default,
 .scroll-top a:link,
 .scroll-top a:visited,
 blockquote {
-    border-color: #38b48b; 
+    border-color: #7dbe79; 
 }
 
 
@@ -95,7 +95,7 @@ blockquote {
 .navbar-custom.top-nav-collapse,
 figure:hover figcaption,
 #cd-zoom-in, #cd-zoom-out{
-	background-color: rgba(56,180,139,0.9); /* RGBA of Primary color - opacity .9 */
+	background-color: rgba(125,190,121,0.9); /* RGBA of Primary color - opacity .9 */
 }
 
 
@@ -103,20 +103,20 @@ figure:hover figcaption,
 
 footer,
 footer .copynote {
-    background: rgba(56,180,139,0.9); 
+    background: rgba(125,190,121,0.9); 
 }
 
 
 /* Text selection color */
 
 ::-moz-selection {
-    background: rgba(56,180,139, .7); 
+    background: rgba(125,190,121, .7); 
 }
 
 ::selection {
-    background: rgba(56,180,139, .7); 
+    background: rgba(125,190,121, .7); 
 }
 
 body {
-    webkit-tap-highlight-color: rgba(56,180,139, .7); 
+    webkit-tap-highlight-color: rgba(125,190,121, .7); 
 }
