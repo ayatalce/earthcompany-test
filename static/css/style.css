@@ -42,7 +42,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: "YuGothic", '游ゴシック',"Helvetica", sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック', sans-serif;
     font-weight: 300;
     background-color: #fff; 
     letter-spacing:1px;
@@ -52,7 +52,7 @@ body {
 h1 {
     margin: 0 0 20px 0;
     text-transform: none;
-    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size:36px;
     letter-spacing: 4px;
@@ -63,7 +63,7 @@ h1 {
 h2 {
     margin: 0 0 20px 0; 
     text-transform: none;
-    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 1px;
@@ -74,7 +74,7 @@ h2 {
 h3 {
     margin: 0 0 20px 0;
     text-transform: none;
-    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1px;
@@ -85,7 +85,7 @@ h3 {
 h4 {
     margin: 0 0 20px 0; 
     text-transform: none;
-    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 32px;
     letter-spacing: 3px;
@@ -96,7 +96,7 @@ h4 {
 h5 {
     margin: 0 0 20px 0; 
     text-transform: none;
-    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 28px;
     letter-spacing: 1px;
@@ -136,6 +136,11 @@ a:focus {
 
 .gray{
     font-size: 18px;
+    color: #a5a5a5;
+}
+
+.pgray{
+    font-size:24px;
     color: #a5a5a5;
 }
 
@@ -213,7 +218,7 @@ blockquote span{
     height: 135px;
     margin-bottom: 0;
     text-transform: none;
-    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", sans-serif;
     font-weight: 600;
     -webkit-transition: background .5s ease-in-out;
    -moz-transition: background .5s ease-in-out;
@@ -385,7 +390,7 @@ blockquote span{
     height: 50%;
     top: 50%;
     font-size: 20px;
-    font-family: "YuGothic", '游ゴシック',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "YuGothic", '游ゴシック', sans-serif;
     text-transform: none;
     font-weight: medium;
     text-align: center;
@@ -532,7 +537,7 @@ blockquote span{
 }
 
 .about h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 0 10px 0;
     padding: 0;
 }
@@ -569,6 +574,83 @@ blockquote span{
 #portfolio{
     background: #222;
     background: url(../images/cover-two.jpg) 50% 0 no-repeat scroll;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+         -o-background-size: cover;
+}
+
+.overlay-portfolio {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.recent-project::before {
+    content: "";
+    background: rgba(59,59,59,0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+       -moz-transition: all 0.2s;
+         -o-transition: all 0.2s;
+            transition: all 0.2s;
+}
+.recent-project:hover::before {
+    opacity: 1;
+}
+
+.project-info h3,
+ul.project-meta,
+.full-project {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(100px);
+       -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+         -o-transform: translateY(100px);
+            transform: translateY(100px);
+}
+.project-info h3,
+ul.project-meta{
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+.full-project {
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+}
+.recent-project:hover .project-info h3,
+.recent-project:hover ul.project-meta,
+.recent-project:hover .full-project {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+}
+
+/* Overlay and hover effect
+/* ---------------------------------------------- */
+
+#profile{
+    background: #222;
+    background: url(../images/cover-three.jpg) 50% 0 no-repeat scroll;
     -webkit-background-size: cover;
        -moz-background-size: cover;
             background-size: cover;
@@ -639,8 +721,33 @@ ul.project-meta{
          -o-transform: translateY(0);
             transform: translateY(0);
 }
+/* Service */
 
+ #service a:active {text-decoration:none !important}
+ .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background: none; color:#f95469}
 
+#service{ padding: 96px 0px;}
+#service .block-top{text-align: center;}
+#service .service-header{margin: 0px}
+#service .service-header h1{color:#636C6C; font-size: 36px; font-family: 'Century Gothic', "YuGothic", '游ゴシック', sans-serif; font-weight: 700; }
+#service .service-header p{color:#AFB8B8; font-size: 16px; font-family: 'Century Gothic', "YuGothic", '游ゴシック', sans-serif; font-weight: 400; line-height: 24px}
+
+#service .block-bottom{}
+#service .service-tab{}
+#service .service-tab ul{float: left;list-style: outside none none;padding: 0;margin-right: 150px;}
+#service .service-tab ul li{ border-right: 1px solid #DBE2E2;}
+#service .service-tab ul li a{color: #9FA9A9; padding-top: 23px; padding-bottom: 17px;font-size: 20px; font-family: 'Century Gothic', "YuGothic", '游ゴシック',sans-serif; font-weight: 400;display: block; padding-right: 60px}
+#service .service-tab ul li a i{font-size: 45px; margin-right: 40px; position: relative;top: 10px;}
+#service .service-tab ul li a:hover{border-right: 10px solid #f95469;padding-right: 50px}
+#service .service-tab ul li a:hover i{color: #f95469}
+.edit-tab{overflow: hidden;}
+.edit-tab h1{color: #636C6C; font-size: 24px; font-family: 'Centrury Gothic', "YuGothic", '游ゴシック', sans-serif; font-weight: 700; margin: 0px;margin: 0px;padding-bottom: 30px; padding-top:50px;}
+.edit-tab p{color:#AFB8B8; font-size: 16px;font-family: 'Century Gothic', "YuGothic", '游ゴシック', sans-serif; font-weight: 400; line-height: 24px;margin: 0px;}
+
+.edit-tab-content{padding-top: 30px}
+.teb-icon-edit{ height: 170px;width: 170px; margin: 0 auto; color:#f95469;}
+
+.teb-icon-edit i{font-size: 170px}
 
 
 /* Footer */

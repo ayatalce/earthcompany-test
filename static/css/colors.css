@@ -98,6 +98,11 @@ figure:hover figcaption,
 	background-color: rgba(125,190,121,0.9); /* RGBA of Primary color - opacity .9 */
 }
 
+/* Service */
+#service{
+    background-color: #fafafa;
+}
+
 
 /* Footer color */
 
